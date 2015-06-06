@@ -1,0 +1,39 @@
+<!--
+angularjs-boilerplate
+Copyright (c) 2015 Luis Enrique Arriojas
+http://opensource.org/licenses/MIT
+
+Boilerplate for the lastest stable version of AngularJS.
+Read README.md to know which version of AngularJS was used in this boilerplate.
+
+***************** LinkedIn *****************
+* https://www.linkedin.com/in/luisarriojas *
+********************************************
+-->
+
+<!doctype html>
+<html ng-app="hioApp" ng-controller="hioCtrl">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{hioMeta.description}}">
+    <title ng-bind-template="{{hioMeta.title}} - AngularJS Boilerplate"></title>
+
+    <!--my css and js-->
+    <link href="css/hio.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+    <!--AngularJS-->
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/angular-app.js"></script>
+    <script src="js/angular-ctrl.js"></script>
+</head>
+
+<body>
+{{ indexContent }}
+<div ng-view></div>
+</body>
+
+</html>
